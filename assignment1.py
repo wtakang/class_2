@@ -1,3 +1,5 @@
+#Done by Tanyi
+
 #this program Print the sum of 2 numbers
 def sum(a, b):
     print(a+b)
@@ -15,7 +17,7 @@ difference(5-3)
 
 def getuser():
     print('please type in your name!')
-    name = input()
+    name = input()#get the name from the user/keyboard
     print(name)
 
 getuser()
@@ -31,7 +33,7 @@ b = 'tanyi'
 print('my name is '+b+' and i am '+str(a))
 
 #Which of the following are operators, and which are values?
-operators (-, /, +, *)
+operators ("-, /, +, *")
 values  ('hello', -88.8, 5)
 
 #What is an expression made up of? What do all expressions do?
@@ -53,9 +55,9 @@ bacon = 21
 
 #What three functions can be used to get the integer, floating-point
 #number, or string version of a value?
-int() to get integer
-str() to get strings
-float() to get floats
+int() to get integer value
+str() to get string value
+float() to get floats value
 
 #Why does this expression cause an error? How can you fix it?
 # 'I have eaten ' + 99 + ' burritos.'
@@ -64,20 +66,28 @@ float() to get floats
 'I have eaten ' + str(99) + ' burritos.'
 
 def collatz(number):
-    if number % 2 == 0:
-        print( number // 2)
-        return number
-    else number % 2 == 1:
-        print((number* 3 ) + 1)
-     
+    if number % 2 == 0:#if number is even
+        #print( number / 2)
+        return int(number/ 2)
+    else: #number is odd
+        #print((number* 3 ) + 1)
+        return (int(number* 3 ) + 1)
+
 #Then write a program that lets the user type in an integer and that keeps
 #calling collatz() on that number until the function returns the value 1
-
 userguess = int(input('please type in a number ' ))
+
+checkvalue = collatz(userguess)#assign the return function value to a variable
 while True:
-    collatz(userguess):
-    if ccollatz(userguess) == 1:
+    if checkvalue == 1: #check if the variable....
+        print(checkvalue)
         break
+    else:
+        print(checkvalue)
+        checkvalue = collatz(checkvalue)#re-set the check value 
+        collatz(checkvalue)#recall the function with the new checkvalue
      
+
+
      
      
