@@ -1,0 +1,37 @@
+Dictionaries and Sets
+1.
+Create a dictionary containing “name”, “city”, and “cake” for “Chris” from “Seattle” who likes “Chocolate”.
+Display the dictionary.
+Delete the entry for “cake”.
+Display the dictionary.
+Add an entry for “fruit” with “Mango” and display the dictionary.
+Display the dictionary keys.
+Display the dictionary values.
+Display whether or not “cake” is a key in the dictionary (i.e. False) (now).
+Display whether or not “Mango” is a value in the dictionary.
+2. 
+Using the dict constructor and zip, build a dictionary of numbers from zero to fifteen and the hexadecimal equivalent (string is fine).
+3.
+Using the dictionary from item 1: Make a dictionary using the same keys but with the number of ‘a’s in each value.
+4.
+Create sets s2, s3 and s4 that contain numbers from zero through twenty, divisible 2, 3 and 4.
+Display the sets.
+Display if s3 is a subset of s2 (False)
+and if s4 is a subset of s2 (True).
+5.
+Create a set with the letters in ‘Python’ and add ‘i’ to the set.
+Create a frozenset with the letters in ‘marathon’
+display the union and intersection of the two sets.
+
+Exceptions
+Improving input
+
+The input() function can generate two exceptions: EOFError or KeyboardInterrupt on end-of-file(EOF) or canceled input.
+Create a wrapper function, perhaps safe_input() that returns None rather rather than raising these exceptions, when the user enters ^C for Keyboard Interrupt, or ^D (^Z on Windows) for End Of File.
+
+write a program which prints the full path to all files in the current directory, one per line
+write a program which copies a file from a source, to a destination (without using shutil, or the OS copy command)
+
+write a full set of letters to everyone to individual files on disk
+see if you can use a dict to switch between the users selections
+Try to use a dict and the .format() method to do the letter as one big template – rather than building up a big string in parts.
