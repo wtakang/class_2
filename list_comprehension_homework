@@ -1,0 +1,113 @@
+1- feast = ['lambs', 'sloths', 'orangutans', 'breakfast cereals', 'fruit bats']
+comprehension = [delicacy.capitalize() for delicacy in feast]
+* print(comprehension[0])
+  Lambs
+* print(comprehension[1])
+  Sloths
+
+2-feast = ['spam', 'sloths', 'orangutans', 'breakfast cereals', 'fruit bats']
+comprehension = [delicacy for delicacy in feast if len(delicacy) > 6]
+* print(len(feast)
+  5
+* print(len(comprehension))
+  3
+
+3-list_of_tuples = [(1, 'lumberjack'), (2, 'inquisition'), (4, 'spam')]
+comprehension = [ skit * number for number, skit in list_of_tuples ]
+* print(comprehenion[0])
+  lumberjack
+* print(len(comprehension[2]))
+  16
+
+4
+*print(len(comprehension))
+ 6
+*print(comprehension[0])
+ poached egg and lite spam
+
+
+print(comprehension) 
+
+
+
+5-comprehension = { x for x in 'aabbbcccc'}
+* print(comprehension)
+  {'a', 'c', 'b'} the 'set' allows for non-repetition giving the output as shown on the left
+
+
+6-dict_of_weapons = {'first': 'fear', 'second': 'surprise', 'third':'ruthless efficiency', '
+None}
+dict_comprehension = { k.upper(): weapon for k, weapon in dict_of_weapons.iteritems() if w
+*print('first' in dict_comprehension)
+ False
+*print('FIRST' in dict_comprehension)
+ True
+*len(dict_of_weapons)
+ 5
+*len(dict_comprehension) #error. AttributeError: 'dict' object has no attribute 'iteritems'
+
+7
+l = [2, 1, 2, 3, 4]
+a = [2, 2, 0]
+b = [1, 3, 5]
+
+def count_evens(nums):
+    c = [i for i in nums if i%2 is 0]
+    return len(c)
+
+print(count_evens(l))
+3
+
+print(count_evens(a))
+3
+
+print(count_evens(b))
+0
+
+8
+food_prefs = {"name": "Chris",
+"city": "Seattle",
+"cake": "chocolate",
+"fruit": "mango",
+"salad": "greek",
+"pasta": "lasagna"}
+
+#since the items in the dictionary are small, i can do as below.
+
+value = [value for value in food_prefs.values()]
+
+key = [key for key in food_prefs.keys()]
+
+print('{} is from {}, and he likes {} {}, {} {}, {} {}, and {}'.format(food_prefs['name'], food_prefs['city'], value[2], key[2], value[3], key[3], value[4], key[4], value[5]))
+
+nums = [i for i in range(1,16)]
+print(nums)
+hexs= [i for i in range(1,10)]+ [letter for letter in 'ABCDEF']
+print(hexs)
+num_hex= {nums:hexs for nums, hexs in zip(nums, hexs)}
+print(num_hex)
+
+for value in weapons: 
+    if weapons[value] == None: # TypeError: object of type 'NoneType' has no len()
+        weapons[value] = 'a'*4 # because i know that the "None" string has four letters
+    else:
+        a = len(weapons[value])
+        weapons[value] = a*'a'
+print(weapons)
+
+
+for value in food_prefs: # loop via the dictionary
+        a = len(food_prefs[value]) # get the lenght of each value 
+        food_prefs[value] = a*'a' #set the value of each item to its equivilent number of 'a's
+print(food_prefs)
+
+#Create sets s2, s3 and s4 that contain numbers from zero through twenty, divisible 2, 3 and 4.
+s2 = {number for number in range(1,21) if number%2 is 0}
+print(s2)
+print()
+s3 = {number for number in range(1,21) if number%3 is 0}
+print(s3)
+print()
+s4 = {number for number in range(1,21) if number%4 is 0}
+print(s4)
+print()
