@@ -37,14 +37,11 @@ def getUrls(url):
     for link in matches:
         setlist.add(link.group(0))# add the regex search results to the setlist to eliminate repetition
     
-
-getUrls("https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains")
-
+getUrls("https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains") # u can change the link here to try other links
 
 for i in setlist:
     print(i) # display the found links
          
-    
 sys.exit()
 
 
